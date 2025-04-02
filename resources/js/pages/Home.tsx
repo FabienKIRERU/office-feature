@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "@inertiajs/react";
-
 const Home = ({ properties, categories }) => {
   return (
     <div className="min-h-screen bg-gray-100">
