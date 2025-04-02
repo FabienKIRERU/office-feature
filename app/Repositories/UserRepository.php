@@ -3,9 +3,10 @@
 namespace App\Repositories;
 
 use App\Models\User;
+use App\Repositories\Contracts\AuthRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
-class UserRepository {
+class UserRepository implements AuthRepositoryInterface {
     
     public function getAll(): Collection {
         return User::all();

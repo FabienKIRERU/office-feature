@@ -3,9 +3,10 @@
 namespace App\Repositories;
 
 use App\Models\OrderItem;
+use App\Repositories\Contracts\OrderItemRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
-class OrderItemRepository {
+class OrderItemRepository implements OrderItemRepositoryInterface {
 
     protected $orderItem;
 

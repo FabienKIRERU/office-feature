@@ -3,9 +3,10 @@
 namespace App\Repositories;
 
 use App\Models\Property;
+use App\Repositories\Contracts\PropertyRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
-class PropertyRepository {
+class PropertyRepository implements PropertyRepositoryInterface {
     
     protected $property;
 

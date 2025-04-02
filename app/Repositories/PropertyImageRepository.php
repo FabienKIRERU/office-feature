@@ -3,9 +3,10 @@
 namespace App\Repositories;
 
 use App\Models\PropertyImage;
+use App\Repositories\Contracts\PropertyImageRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
-class PropertyImageRepository {
+class PropertyImageRepository implements PropertyImageRepositoryInterface {
 
     protected $propertyImage;
 

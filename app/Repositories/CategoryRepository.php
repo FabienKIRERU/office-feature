@@ -4,11 +4,12 @@ namespace App\Repositories;
 use Illuminate\Support\Facades\Cache;
 
 use App\Models\Category;
+use App\Repositories\Contracts\CategoryRepositoryInterface;
 
 /**
  * Class CatgoryRepository
  */
- class CategoryRepository {
+ class CategoryRepository implements CategoryRepositoryInterface {
 
     /**
      * @return string
