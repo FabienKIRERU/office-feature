@@ -7,6 +7,13 @@ use App\Repositories\Contracts\AuthRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 class UserRepository implements AuthRepositoryInterface {
+
+    protected $user;
+
+    public function __construct(?User $user = null)
+    {
+        $this->user = $user ?? new User();
+    }
     
     public function getAll(): Collection {
         return User::all();

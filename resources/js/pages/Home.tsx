@@ -4,7 +4,7 @@ const Home = ({ properties, categories }) => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-blue-600 text-white py-6">
+      <header className="bg-blue-400 text-white py-6">
         <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
           <h1 className="text-3xl font-bold">🛒 BureauShop</h1>
           <nav>
@@ -19,7 +19,7 @@ const Home = ({ properties, categories }) => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-blue-500 text-white text-center py-20">
+      <section className="bg-blue-300 text-white text-center py-20">
         <h2 className="text-4xl font-bold">Trouvez le meilleur matériel de bureau !</h2>
         <p className="mt-4 text-lg">Achetez ou louez facilement vos fournitures de bureau.</p>
         <Link href="/properties" className="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">
