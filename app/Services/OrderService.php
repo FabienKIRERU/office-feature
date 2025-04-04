@@ -21,6 +21,10 @@ class OrderService {
         return $this->orderRepository->getAll();
     }
 
+    public function updateOrderStatus($id, $status){
+        return $this->orderRepository->updateStatus($id, $status);
+    }
+
     public function getOrderDetails(int $id) {
         return $this->orderRepository->findById($id);
     }
@@ -53,5 +57,4 @@ class OrderService {
             throw new Exception("Erreur de commende : " . $e->getMessage());
         }
     }
-    
 }

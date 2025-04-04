@@ -10,6 +10,8 @@ interface OrderRepositoryInterface{
 
     public function findById(int $id);
 
+    public function updateStatus($id, $status);
+
     public function create(array $data);
 
     public function update(Order $order, array $data);

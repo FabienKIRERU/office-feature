@@ -18,7 +18,11 @@ class PropertyRepository implements PropertyRepositoryInterface {
     public function getAll(): Collection {
         return Property::with(['category', 'user', 'images'])->latest()->get();
     }
-
+    
+    public function getPropertiesByUser(int $userId) {
+        return Property::where('user_id', $userId)->get();
+    }
+    
     public function findById(int $id): ?Property {
         return Property::with(['category', 'user', 'images'])->findOrFail($id);
     }
